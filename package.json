@@ -1,0 +1,25 @@
+{
+  "name": "10-x-clone",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "app",
+    "api",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "test:watch": "npm run test:watch --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "supabase:gen": "supabase gen types typescript --local > app/src/types/database.ts",
+    "supabase:cli": "supabase"
+  },
+  "devDependencies": {
+    "supabase": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

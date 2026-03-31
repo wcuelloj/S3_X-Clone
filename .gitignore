@@ -1,0 +1,12 @@
+node_modules
+dist
+
+# Secrets (keep .env.example tracked)
+.env
+.env.local
+.env.*.local
+coverage
+.DS_Store
+*.log
+
+qa-evidence
